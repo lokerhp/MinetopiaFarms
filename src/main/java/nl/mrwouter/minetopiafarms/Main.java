@@ -64,7 +64,6 @@ public class Main extends JavaPlugin {
 		getConfig().addDefault("TerugverkoopPrijs.Boer.POTATOES", 20);
 		getConfig().addDefault("TerugverkoopPrijs.Houthakker", 25);
 		getConfig().addDefault("TerugverkoopPrijs.Visser", 35);
-
 		getConfig().addDefault("CommandsUitvoerenBijBaanWissel.Boer", Arrays.asList("Typ hier jouw commands"));
 		getConfig().addDefault("CommandsUitvoerenBijBaanWissel.Houthakker", Arrays.asList("Typ hier jouw commands"));
 		getConfig().addDefault("CommandsUitvoerenBijBaanWissel.Mijnwerker", Arrays.asList("Typ hier jouw commands"));
@@ -92,7 +91,7 @@ public class Main extends JavaPlugin {
 		getConfig().addDefault("Messages.AardappelNietVolgroeid", "&4ERROR: &cDeze aardappel is niet volgroeid!");
 
 		getConfig().addDefault("Messages.TeWeinigGeld",
-				"&4ERROR: &cOm van baan te veranderen heb je &4€ <Bedrag> &cnodig!");
+				"&4ERROR: &cOm van baan te veranderen heb je &4 <Bedrag> &cnodig!");
 
 		getConfig().addDefault("Messages.GeldBetaald",
 				"&3Gelukt! Wij hebben jou &b€ <Bedrag> &3betaald voor jouw opgehaalde spullen!");
@@ -116,6 +115,11 @@ public class Main extends JavaPlugin {
 		getConfig().addDefault("scheduler.miner.IRON_ORE", 2400);
 		getConfig().addDefault("scheduler.miner.LAPIS_ORE", 2400);
 		getConfig().addDefault("scheduler.miner.REDSTONE_ORE", 2400);
+		getConfig().addDefault("BeroepEnabled.Miner","true");
+		getConfig().addDefault("BeroepEnabled.Mijnwerker","true");
+	    getConfig().addDefault("BeroepEnabled.Houthakker","true");
+		getConfig().addDefault("BeroepEnabled.Visser","true");
+		
 
 		getConfig().options().copyDefaults(true);
 		saveConfig();
